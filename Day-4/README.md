@@ -1,6 +1,6 @@
 # Basic RISC-V CPU micro-architecture
 
-  ![CPU Microarchitecture](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Screenshot%20from%202025-06-02%2022-28-36.png)
+  ![CPU Microarchitecture](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Day-4/Screenshot%20from%202025-06-02%2022-28-36.png)
 
 
  # 🔍 CPU Block Diagram Explanation
