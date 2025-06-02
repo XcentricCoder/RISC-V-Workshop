@@ -9,18 +9,15 @@ The “RISC-V based MYTH (Microprocessor for You in Thirty Hours)” workshop pr
     🧩 Understanding how a basic RISC-V processor functions
     ⚙️ Practical experience with hardware simulators for RISC-V
 
-#RISC-V CPU Core
+# RISC-V CPU Core
 
 This project implements a basic RISC-V (RV32I) CPU core, based on the open standard instruction set architecture (ISA) developed by the RISC-V Foundation. RISC-V is designed to be simple, modular, and extensible, making it ideal for research, education, and custom hardware development.
 
 This implementation supports the 32-bit base integer instruction set (RV32I), featuring:
 
     Instruction fetch, decode, execute, and write-back stages
-
     Register file with 32 general-purpose registers
-
     Support for arithmetic, logical, control flow, and memory instructions
-
     Clean and modular Verilog codebase for easy extension
 
 Ideal for learning CPU architecture, digital design, or integrating into larger SoC projects.
