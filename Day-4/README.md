@@ -21,3 +21,9 @@
 | **Branch Target Logic**                 | Determines the target address for branch instructions, using the ALU or an adder and selecting via a MUX.                                  |
 
 
+# Labs for day 4
+# 1.Fetch and Decode
+  ![Fetch and Decode](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Day-4/Screenshot%20from%202025-05-29%2021-37-15.png)
+
+# 2. Half-complete RISC-V CPU
+   ![Half-complete CPU](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Day-4/Screenshot%20from%202025-05-31%2009-21-30.png)
