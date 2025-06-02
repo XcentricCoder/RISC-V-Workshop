@@ -7,4 +7,4 @@
      The Waveform visual:
      
   
-     
+     1. ![CPU Block Diagram](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Day-5/Screenshot%20from%202025-06-01%2014-18-46.png)
