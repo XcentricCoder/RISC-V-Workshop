@@ -21,3 +21,9 @@ This implementation supports the 32-bit base integer instruction set (RV32I), fe
     Clean and modular Verilog codebase for easy extension
 
 Ideal for learning CPU architecture, digital design, or integrating into larger SoC projects.
+
+> ℹ️ **Note**  
+> 1. Before moving on, you should know that all the tools like Linux, Spike, GNU compiler etc. are given separately to the student by the facilitator after buying this course.  
+> 2. All the projects in Makerchip are made using the RISC-V/Calculator starter code, which is present in the [RISC-V_MYTH_Workshop](https://github.com/stevehoover/RISC-V_MYTH_Workshop). You can click the RISC-V/Calculator starter link present in the repository and make projects from there only.
+
+
