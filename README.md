@@ -27,3 +27,12 @@ Ideal for learning CPU architecture, digital design, or integrating into larger 
 > 2. All the projects in Makerchip are made using the RISC-V/Calculator starter code, which is present in the [RISC-V_MYTH_Workshop](https://github.com/stevehoover/RISC-V_MYTH_Workshop). You can click the RISC-V/Calculator starter link present in the repository and make projects from there only.
 
 
+# License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/LICENSE) file for details.
+
+
+
+# Acknowledgements
+I would thank to Kunal Ghosh sir who guided us over this workshop and also taught us the first two days of this workshop. I will also express my gratitude to Steve Hoover sir who taught us in the last 3 days. And also thank to VSD and Redwood EDA for organizing this workshop.
+
+
