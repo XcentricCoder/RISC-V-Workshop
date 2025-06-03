@@ -38,6 +38,12 @@ A combinational logic circuit is a type of digital circuit where the output at a
     		$quot[31:0] = $val1[31:0] / $val2[31:0];
       $out[31:0] = $op[0] ? $sum : $op[1] ? $diff : $op[2] ? $prod : $qout ;
 
+
+      ![Combi_Calc]()
+
+
+  
+
    
 
  
