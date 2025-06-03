@@ -9,6 +9,9 @@ The “RISC-V based MYTH (Microprocessor for You in Thirty Hours)” workshop pr
     🧩 Understanding how a basic RISC-V processor functions
     ⚙️ Practical experience with hardware simulators for RISC-V
 
+
+
+
 # RISC-V CPU Core
 
 This project implements a basic RISC-V (RV32I) CPU core, based on the open standard instruction set architecture (ISA) developed by the RISC-V Foundation. RISC-V is designed to be simple, modular, and extensible, making it ideal for research, education, and custom hardware development.
