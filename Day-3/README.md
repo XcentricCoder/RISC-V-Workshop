@@ -39,11 +39,67 @@ A combinational logic circuit is a type of digital circuit where the output at a
       $out[31:0] = $op[0] ? $sum : $op[1] ? $diff : $op[2] ? $prod : $qout ;
 
 
-      ![Combi_Calc]()
+   ![Combi_Calc](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Day-3/Screenshot%20from%202025-05-27%2006-44-54.png)
 
 
+ ## 2. Sequential Calculator
+         
+    $sum[31:0] = $val1[31:0] + $val2[31:0];
+    $diff[31:0] = $val1[31:0] - $val2[31:0];
+    $prod[31:0] = $val1[31:0] * $val2[31:0];
+    $quot[31:0] = $val1[31:0] / $val2[31:0];
+    $out[31:0] = $op[0] ? $sum : $op[1] ? $diff : $op[2] ? $prod : $qout ;
+    $out[31:0] = $val1[31:0];
+
+  ![Seq_Calc](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Day-3/Screenshot%20from%202025-06-03%2019-25-57.png)
+
+
+  ## 3. Fibonacci Calculator
   
+    $num[31:0] = $reset ? 1: (>>1$num + >>2$num );
 
-   
 
- 
+   ![Fibonacci_Calc](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Day-3/Screenshot%20from%202025-06-03%2019-34-59.png)
+      
+
+  ## 4. Pythagorean Theorem Pipeline
+    |calc
+ 		 			 @1
+     			   $aa_sq[7:0] = $aa[3:0] ** 2;
+    			    $bb_sq[7:0] = $bb[3:0] ** 2;
+ 			    @2
+     			   $cc_sq[8:0] = $aa_sq + $bb_sq;
+ 			    @3
+     			   $cc[4:0] = sqrt($cc_sq);
+    
+
+   ![Pyth_thm](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Day-3/Screenshot%20from%202025-05-27%2022-17-53.png)
+
+  ## 5.Final calculator with validity and memory
+
+            @0
+         $reset = *reset;
+              
+        
+      @1
+         $valid[0:0] = $reset ? '0 : >>1$valid + 1;
+         $valid_or_reset = $valid || $reset;
+         $val2[31:0] = $rand2;
+         $val1[31:0] = >>2$out;
+         ?$valid_or_reset
+            $sum[31:0] = $val1[31:0] + $val2[31:0];
+            $diff[31:0] = $val1[31:0] - $val2[31:0];
+            $prod[31:0] = $val1[31:0] * $val2[31:0];
+            $quot[31:0] = $val1[31:0] / $val2[31:0];
+         
+      @2 
+         ?$valid_or_reset
+            $out[31:0] = $reset ? '0:
+                         $op[2:0] == 0 ? $sum:
+                         $op[2:0] == 1 ? $diff:
+                         $op[2:0] == 2 ? $prod:
+                         $op[2:0] == 3 ? $div:
+                         $op[2:0] == 4 ? >>2$mem : >>2$out;
+            $mem[31:0] = $reset ? '0 : $op[2:0] == 5 ? $val1: (>>2$mem);
+
+   ![Calc_mem_val](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Day-3/Screenshot%20from%202025-06-03%2020-44-04.png)
