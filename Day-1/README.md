@@ -5,14 +5,14 @@ RV_D1SK1_L1_Introduction
     Overview of the RISC-V Instruction Set Architecture (ISA).
     RISC-V Architecture (C) → Implementation (RTL, e.g., PicoRV32 core) → Layout (qflow for hardware).
     Layer mapping: Application layer → System software → Hardware layer.
-
+![pic1](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Day-1/Screenshot%20from%202025-06-01%2016-45-39.png)
 RV_D1SK1_L2_From Apps To Hardware
 
     Software stack:
         Applications → System Software → OS → High-level languages (C, C++, Java, VB) → Compiler → ISA → Assembler
     Hardware flow:
         RTL snippet (understands instructions like add x6, x10, ...) → Synthesized netlist → Physical design implementation.
-
+![pic2](https://github.com/XcentricCoder/RISC-V-Workshop/blob/main/Day-1/Screenshot%20from%202025-06-01%2016-37-46.png)
 
 ## Compute sum from 1 to n
       #include <stdio.h>
